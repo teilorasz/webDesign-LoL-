@@ -1,17 +1,3 @@
-<!--
-
-Threat Model - log in 
-
-Threat Source: External/Internal (internal as someone could leak the data of users)
-Threat Agent: Human/bot
-Threat Intention: Intentional
-Threat Motivation: Getting into accounts of other users or gathering information
-Threat Impact: Users data can be stolen, "Data-Breach"
-Threat Mitigation: Login validation, 2FA requirement for each user. Send an automatic email if someone tries to access the account more than 3 times and inputs incorrect data,
-possibly send a SMS verification. Encrypt database so no one could leak information if they try to access database with an SQL injection or any other means.
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +5,23 @@ possibly send a SMS verification. Encrypt database so no one could leak informat
     <link rel = "stylesheet" href = "prototype.css">
     <link rel = "icon" href = "LoL_icon.svg.png">
     <title > League of Legends Society </title>
-    <meta charset="utf-8" lang= "en">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!--
+
+    Threat Model - log in 
+
+    Threat Source: External/Internal (internal as someone could leak the data of users)
+    Threat Agent: Human/bot
+    Threat Intention: Intentional
+    Threat Motivation: Getting into accounts of other users or gathering information
+    Threat Impact: Users data can be stolen, "Data-Breach"
+    Threat Mitigation: Login validation, 2FA requirement for each user. Send an automatic email if someone tries to access the account more than 3 times and inputs incorrect data,
+    possibly send a SMS verification. Encrypt database so no one could leak information if they try to access database with an SQL injection or any other means.
+
+    -->
+
 </head>
 <body class = "background">
     <!-- Navigation bar -->
@@ -57,7 +58,7 @@ possibly send a SMS verification. Encrypt database so no one could leak informat
                 <input type="password" id="password" placeholder="Enter password">
             </div>
             <div class ="form-element">
-                <button>Sign in</button>
+                <button onclick="submit_logIn()">Sign in</button>
             </div>
         </div>
     </div>
@@ -87,7 +88,7 @@ possibly send a SMS verification. Encrypt database so no one could leak informat
                 <input type="password" id="password3" placeholder="Re-enter password">
             </div>
             <div class ="form-element">
-                <button>Sign in</button>
+                <button onclick="submit_register()">Sign in</button>
             </div>
         </div>
     </div>
