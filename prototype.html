@@ -1,3 +1,17 @@
+<!--
+
+Threat Model - log in 
+
+Threat Source: External/Internal (internal as someone could leak the data of users)
+Threat Agent: Human/bot
+Threat Intention: Intentional
+Threat Motivation: Getting into accounts of other users or gathering information
+Threat Impact: Users data can be stolen, "Data-Breach"
+Threat Mitigation: Login validation, 2FA requirement for each user. Send an automatic email if someone tries to access the account more than 3 times and inputs incorrect data,
+possibly send a SMS verification. Encrypt database so no one could leak information if they try to access database with an SQL injection or any other means.
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
