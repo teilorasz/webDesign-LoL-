@@ -1,23 +1,110 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <!-- Header Links css file as well as sets the icon of the tab and gives it a title (meta tags are there for easier acces, so it opens up a website for initial device scale and it uses utf8 encoding) -->
         <link rel = "stylesheet" href = "prototype.css">
         <link rel = "icon" href = "LoL_icon.svg.png">
-        <title > League of Legends Sociaty </title>
+        <title > League of Legends Society </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class = "background">
-        <img src = "https://logos-world.net/wp-content/uploads/2020/11/League-of-Legends-Logo.png" width = "600" height = "500" class="center">
-        <div>
-            <nav class = "center">
-                <ul>
-                    <li><a href="prototype.html" class = "menu">Home</a></li>
-                    <li><a href="about_us.html" class = "menu">About Us</a></li>
-                    <li><a href="champion_info.html" class = "menu">Champion Info</a></li>
-                    <li><a href="our_team.html" class = "menu">Our Team</a></li>
-                    <li><a href="current_members.html" class = "menu">Current Members</a></li>
-                    <li><a href="events.html" class = "menu">Events</a></li>
-                    <li><a href="contact_us.html" class = "menu">Contact Us</a></li>
-                </ul>
-            </nav>
+        <!-- Navigation bar -->
+    <div>
+        <nav>
+            <ul class = "sepSet">
+                <li class = "lists"><img src = "LoL_icon.svg.png" height = 50 alt = "Icon"></li>
+                <li class = "lists"><a href="prototype.html" class = "lia">Home</a></li>
+                <li class = "lists"><a href="about_us.html" class = "lia">About Us</a></li>
+                <li class = "lists"><a href="champion_info.html" class = "lia">Champion Info</a></li>
+                <li class = "lists"><a href="our_team.html" class = "lia">Our Team</a></li>
+                <li class = "lists"><a href="current_members.html" class = "lia">Current Members</a></li>
+                <li class = "lists"><a href="events.html" class = "lia">Events</a></li>
+                <li class = "lists"><a href="contact_us.html" class = "lia">Contact Us</a></li>
+                <li class = "lists"><a href="image_gallery.html" class = "lia">Gallery</a></li>
+                <li style="float:right;"><button id="show-login" style="padding:5px 50px 5px 4px;" class = "button">Log In</button></li>
+                <li style="float:right;"><button id="show-register" style="padding:5px 50px 5px 4px; " class = "button">Register</button></li>
+                <li style="float:right;"><form id="form" role="search"><input type="search" placeholder = "Search..."><button class = "button"><svg viewBox = "0 0 1024 1024"><path class = "path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button></form></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- check [java(jss.js)] for log in and register popups-->
+    <!-- A log in pop-up linked to a navigation bar button-->
+    <div class = "popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Log in</h2>
+            <div class ="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
             </div>
+            <div class ="form-element">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter password">
+            </div>
+            <div class ="form-element">
+                <button>Sign in</button>
+            </div>
+        </div>
+    </div>
+    <!-- A register pop-up linked to a navigation bar button -->
+    <div class = "popup2">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Register</h2>
+            <div class ="form-element">
+                <label for="email2">Email</label>
+                <input type="text" id="email2" placeholder="Enter email">
+            </div>
+            <div class ="form-element">
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" placeholder="Enter first name">
+            </div>
+            <div class ="form-element">
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" placeholder="Enter last name">
+            </div>
+            <div class ="form-element">
+                <label for="password2">Password</label>
+                <input type="password" id="password2" placeholder="Enter password">
+            </div>
+            <div class ="form-element">
+                <label for="password3">Re-enter Password</label>
+                <input type="password" id="password3" placeholder="Re-enter password">
+            </div>
+            <div class ="form-element">
+                <button>Sign in</button>
+            </div>
+        </div>
+    </div>
+    <!-- First element of the page (users see this first) contains minimal information -->
+    <div style="height: 1000px;padding-top: 2%;">
+        <img src="background/1462671.jpg" alt = "BackgroundDarius" id ="containerI" style="opacity: 0.55;">
+        <h1 style="position: absolute; font-size: 75px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; top: 25px; left: 775px;">About Us</h1>
+        <blockquote style="position: absolute; left: 150px; top: 250px; font-size: 35px; text-align: center;">“We are a community of passionate players who share a love for the popular multiplayer online battle arena game, League of Legends.<br> Our society was established to bring together players from all skill levels and backgrounds to enjoy the game together, improve their gameplay, and form lasting connections.”</blockquote>
+    </div>
+    <!-- Second element of the page contains larger portion of information and styling -->
+    <div style="height: 750px;">
+        <h3 style="position: relative; font-size: 25px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; top: 200px; left: 240px; width:300px;">WHAT WE DO</h3>
+        <blockquote style="position: relative; left: 0px; top: 120px; font-size: 20px; text-align: left; width: 700px;">Our members consist of casual players, competitive players, and everything in between. We believe that everyone has something to contribute to our community, and we welcome players of all ranks and experience levels. <br><br> At the League of Legends Society, we organize regular events, tournaments, and meetups where members can come together and play. Our events are designed to be fun and inclusive, so whether you're a seasoned player or just starting out, you'll find something to enjoy. <br><br> In addition to our events, we also provide resources and support to help our members improve their gameplay. Our experienced players are always willing to share their knowledge and advice, and we offer coaching sessions and guides to help our members get better. <br><br> We take pride in our welcoming and supportive community, and we strive to make sure that every member feels valued and included. We believe that playing League of Legends is more than just a game - it's a shared experience that brings people together. <br><br>Thank you for considering joining the League of Legends Society. We hope to see you on the Rift soon!</blockquote>        
+        <img src="background/han-flores-1.jpg" alt="Yasuo" style=" width: 40vmin; height: 40vmin; border-radius: 50%; position: relative; top: -500px; left: 1250px; box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);">
+        <img src="gifs/2yqT.gif" alt="GIF" class="giffy" style="top: 141%; left: 77%;">
+    </div>
+    <div style="padding-left: 5%;">
+        <!-- Sponsorship tab (bottom of each page) -->
+        <div style="position:relative; top: 175px; left:8%; margin:0; width: 0">
+            <h1>Sponsors</h1>
+        </div>
+        <div class="vl"></div>
+        <img src = "sponsors/LCS_2021.png" style="position: relative; left: 30%; top: -100px;" alt="LCS" width = 170 height = 80 >
+        <img src = "sponsors/Red-Bull-logo.png" style="position: relative;  left: 35%; top: -100px;" alt="RED-BULL" width = 170 height = 80 >
+        <img src = "sponsors/riot_games.png" style="position: relative;  left: 40%; top: -100px;" alt="RIOTGAMES" width = 170 height = 80 >
+        <img src = "sponsors/twitch.png" style="position: relative;  left: 45%; top: -100px;" alt="TWITCH" width = 170 height = 80 >
+    </div>
+    <footer>
+        <p>© 2023 Teiloras Zukauskas. All rights reserved.<br>
+    </footer>
+    <!-- java script implementation -->
+    <script src="jss.js"></script>
     </body>
 </html>

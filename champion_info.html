@@ -1,353 +1,269 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+         <!-- Header Links css file as well as sets the icon of the tab and gives it a title (meta tags are there for easier acces, so it opens up a website for initial device scale and it uses utf8 encoding) -->
         <link rel = "stylesheet" href = "prototype.css">
         <link rel = "icon" href = "LoL_icon.svg.png">
-        <title > League of Legends Sociaty </title>
+        <title > League of Legends Society </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class = "background">
-        <img src = "https://logos-world.net/wp-content/uploads/2020/11/League-of-Legends-Logo.png" width = "600" height = "500" class="center">
+        <!-- Navigation bar -->
         <div>
-            <nav class = "center">
-                <ul>
-                    <li><a href="prototype.html" class = "menu">Home</a></li>
-                    <li><a href="about_us.html" class = "menu">About Us</a></li>
-                    <li><a href="champion_info.html" class = "menu">Champion Info</a></li>
-                    <li><a href="our_team.html" class = "menu">Our Team</a></li>
-                    <li><a href="current_members.html" class = "menu">Current Members</a></li>
-                    <li><a href="events.html" class = "menu">Events</a></li>
-                    <li><a href="contact_us.html" class = "menu">Contact Us</a></li>
+            <nav>
+                <ul class = "sepSet">
+                    <li class = "lists"><img src = "LoL_icon.svg.png" height = 50 alt = "Icon"></li>
+                    <li class = "lists"><a href="prototype.html" class = "lia">Home</a></li>
+                    <li class = "lists"><a href="about_us.html" class = "lia">About Us</a></li>
+                    <li class = "lists"><a href="champion_info.html" class = "lia">Champion Info</a></li>
+                    <li class = "lists"><a href="our_team.html" class = "lia">Our Team</a></li>
+                    <li class = "lists"><a href="current_members.html" class = "lia">Current Members</a></li>
+                    <li class = "lists"><a href="events.html" class = "lia">Events</a></li>
+                    <li class = "lists"><a href="contact_us.html" class = "lia">Contact Us</a></li>
+                    <li class = "lists"><a href="image_gallery.html" class = "lia">Gallery</a></li>
+                    <li style="float:right;"><button id="show-login" style="padding:5px 50px 5px 4px;" class = "button">Log In</button></li>
+                    <li style="float:right;"><button id="show-register" style="padding:5px 50px 5px 4px; " class = "button">Register</button></li>
+                    <li style="float:right;"><form id="form" role="search"><input type="search" placeholder = "Search..."><button class = "button"><svg viewBox = "0 0 1024 1024"><path class = "path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button></form></li>
                 </ul>
             </nav>
         </div>
-             
-            <div class = "modal-body">
-                <ul class = "modal-body">
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_aatrox.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_ahri.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_akali.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_akshan_v2.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_alistar.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_amumu.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_anivia.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_annie.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_ashe.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_aurelionsol.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_azir.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/Aphelios_0.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_bard.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_belveth.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_blitzcrank.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition">
-                    <li><a><img src = "champions/RiotX_ChampionList_brand.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_braum.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_caitlyn_v2.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_camille.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_cassiopeia.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_chogath.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_corki.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_darius.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_diana.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_draven.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_drmundo_v2.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_ekko.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_elise.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_evelynn.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_ezreal.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_fiddlesticks_v2.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_fiora.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_fizz.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_galio.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_gangplank.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_garen.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_gnar.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_gragas.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_graves-cigar.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_gwen.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_hecarim.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_heimerdinger.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_ialiyah.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_illaoi.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_irelia.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_ivern.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_janna.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_jarvaniv.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_jax.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_jayce.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_jhin.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_jinx.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kaisa.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kalista.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_karma.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_karthus.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kassadin.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_katarina.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kayle_v4.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kayn.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kennen.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_khazix.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kindred.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kled.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_kogmaw.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_ksante.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/Lillia_0.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_leblanc.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_leesin.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_leona.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_lissandra.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_lucian.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_lulu.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_lux.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_malaphite.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_malzahar.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_maokai.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_masteryi.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_missfortune.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_monkeyking.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_mordekaiser_v2.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_morgana.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_nami.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_nasus.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_nautilus.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_neeko.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_nidalee.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_nilah.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_nocturne.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_nunu.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_olaf.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_orianna.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_ornn.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_pantheon.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_poppy.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_pyke.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_qiyana.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_quinn.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_rakan.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_rammus.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_reksai.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_Rell_v2.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_renata_glasc_v5.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_renekton.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_rengar.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_riven.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_rumble.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_ryze.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_sejuani.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_senna.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_shaco.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_shen.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_shyvana.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_singed.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_sion.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_sivir.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_skarner.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_sona.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_soraka.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_swain.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_sylas.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_syndra.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_tahmkench.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_talon.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_taric.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_teemo.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_thresh.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_tristana.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_trundle.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_tryndamere.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_twistedfate.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_twitch.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_udyr_v2.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_urgot.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_varus.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_vayne.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_veigar.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_velkoz.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_vex.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_vi.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_viego.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_viktor.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_vladimir.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_warwick.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_xayah.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_xeratth.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_xinzhao.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_yasuo.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_yorick.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_yuumi.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_zac.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_zed.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_zeri.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_ziggs.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_zilean.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_zoe.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/RiotX_ChampionList_zyra.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/Samira_0.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/Seraphine_0.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/Sett_0.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/Volibear_0.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
-                    <div class = "transition"> 
-                    <li><a><img src = "champions/Yone_0.jpg" style="object-fit: cover;" width = 200 height = 270  class = "image"></a></li> </div>
+        <!-- check [java(jss.js)] for log in and register popups-->
+        <!-- A log in pop-up linked to a navigation bar button-->
+        <div class = "popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Log in</h2>
+                <div class ="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                </div>
+                <div class ="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class ="form-element">
+                    <button>Sign in</button>
+                </div>
+            </div>
+        </div>
+        <!-- A register pop-up linked to a navigation bar button -->
+        <div class = "popup2">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Register</h2>
+                <div class ="form-element">
+                    <label for="email2">Email</label>
+                    <input type="text" id="email2" placeholder="Enter email">
+                </div>
+                <div class ="form-element">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="Enter first name">
+                </div>
+                <div class ="form-element">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Enter last name">
+                </div>
+                <div class ="form-element">
+                    <label for="password2">Password</label>
+                    <input type="password" id="password2" placeholder="Enter password">
+                </div>
+                <div class ="form-element">
+                    <label for="password3">Re-enter Password</label>
+                    <input type="password" id="password3" placeholder="Re-enter password">
+                </div>
+                <div class ="form-element">
+                    <button>Sign in</button>
+                </div>
+            </div>
+        </div>
+        <!-- First and main element of the page. This contains each "champion" image and they act as a button on which when user presses will generate pop-up [go to java(champs.js)] for more information -->
+        <div class = "background">
+            <h1 style="position: relative; font-size: 75px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; top: 75px; left: 775px; width: 5%;">Champions</h1>
+            <div class = "modal-body" style="margin-left: 50px; margin-top: 150px;" >
+                <ul class = "frames">
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_aatrox.jpg" alt = "Aatrox" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ahri.jpg" alt = "Ahri" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_akali.jpg" alt = "Akali" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_akshan.jpg" alt = "Akshan" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_alistar.jpg" alt = "Alistar" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_amumu.jpg" alt = "Amumu" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_anivia.jpg" alt = "Anivia" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_annie.jpg" alt = "Annie" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ashe.jpg" alt = "Ashe" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_aurelion.jpg" alt = "Aurelion" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_azir.jpg" alt = "Azir" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_aphelios.jpg" alt = "Aphelios" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_bard.jpg" alt = "Bard" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_belveth.jpg" alt = "BelVeth" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_blitzcrank.jpg" alt = "Blitzcrank" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_brand.jpg" alt = "Brand" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_braum.jpg" alt = "Braum" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_caitlyn.jpg" alt = "Caitlyn" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_camille.jpg" alt = "Camille" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_cassiopeia.jpg" alt = "Cassiopeia" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_chogath.jpg" alt = "ChoGath" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_corki.jpg" alt = "Corki" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_darius.jpg" alt = "Darius" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_diana.jpg" alt = "Diana" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_draven.jpg" alt = "Draven" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_drmundo.jpg" alt = "DrMundo" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ekko.jpg" alt = "Ekko" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_elise.jpg" alt = "Elise" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_evelynn.jpg" alt = "Evelynn" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ezreal.jpg" alt = "Ezreal" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_fiddlesticks.jpg" alt = "Fiddlesticks" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_fiora.jpg" alt = "Fiora" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_fizz.jpg" alt = "Fizz" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_galio.jpg" alt = "Galio" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_gangplank.jpg" alt = "Gangplank" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_garen.jpg" alt = "Garen" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_gnar.jpg" alt = "Gnar" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_gragas.jpg" alt = "Gragas" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_graves.jpg" alt = "Graves" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_gwen.jpg" alt = "Gwen" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_hecarim.jpg" alt = "Hecarim" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_heimerdinger.jpg" alt = "Heimerdinger" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_taliyah.jpg" alt = "Ialiyah" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_illaoi.jpg" alt = "Illaoi" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_irelia.jpg" alt = "Irelia" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ivern.jpg" alt = "Ivern" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_janna.jpg" alt = "Janna" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_jarvaniv.jpg" alt = "JarvanIV" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_jax.jpg" alt = "Jax" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_jayce.jpg" alt = "Jayce" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_jhin.jpg" alt = "Jhin" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_jinx.jpg" alt = "Jinx" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kaisa.jpg" alt = "Kaisa" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kalista.jpg" alt = "Kalista" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_karma.jpg" alt = "Karma" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_karthus.jpg" alt = "Karthus" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kassadin.jpg" alt = "Kassadin" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_katarina.jpg" alt = "Katarina" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kayle.jpg" alt = "Kayle" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kayn.jpg" alt = "Kayn" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kennen.jpg" alt = "Kennen" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_khazix.jpg" alt = "KhaZix" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kindred.jpg" alt = "Kindred" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kled.jpg" alt = "Kled" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_kogmaw.jpg" alt = "KogMaw" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ksante.jpg" alt = "Ksante" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_lillia.jpg" alt = "Lillia" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_leblanc.jpg" alt = "LeBlanc" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_leesin.jpg" alt = "LeeSin" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_leona.jpg" alt = "Leona" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_lissandra.jpg" alt = "Lissandra" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_lucian.jpg" alt = "Lucian" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_lulu.jpg" alt = "Lulu" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_lux.jpg" alt = "Lux" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_malphite.jpg" alt = "Malphite" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_malzahar.jpg" alt = "Malzahar" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_maokai.jpg" alt = "Maokai" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_masteryi.jpg" alt = "MasterYi" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_missfortune.jpg" alt = "Miss Fortune" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_wukong.jpg" alt = "Wukong" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_mordekaiser.jpg" alt = "Mordekaiser" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_morgana.jpg" alt = "Morgana" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_nami.jpg" alt = "Nami" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_nasus.jpg" alt = "Nasus" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_nautilus.jpg" alt = "Nautilus" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_neeko.jpg" alt = "Neeko" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_nidalee.jpg" alt = "Nidalee" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_nilah.jpg" alt = "Nilah" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_nocturne.jpg" alt = "Nocturne" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_nunu.jpg" alt = "Nunu" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_olaf.jpg" alt = "Olaf" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_orianna.jpg" alt = "Orianna" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ornn.jpg" alt = "Ornn" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_pantheon.jpg" alt = "Pantheon" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_poppy.jpg" alt = "Poppy" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_pyke.jpg" alt = "Pyke" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_qiyana.jpg" alt = "Qiyana" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_quinn.jpg" alt = "Quinn" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_rakan.jpg" alt = "Rakan" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_rammus.jpg" alt = "Rammus" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_reksai.jpg" alt = "Reksai" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_rell.jpg" alt = "Rell" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_renataglasc.jpg" alt = "RenataGlasc" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_renekton.jpg" alt = "Renekton" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_rengar.jpg" alt = "Rengar" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_riven.jpg" alt = "Riven" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_rumble.jpg" alt = "Rumble" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ryze.jpg" alt = "Ryze" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_sejuani.jpg" alt = "Sejuani" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_senna.jpg" alt = "Senna" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_shaco.jpg" alt = "Shaco" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_shen.jpg" alt = "Shen" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_shyvana.jpg" alt = "Shyvana" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_singed.jpg" alt = "Singed" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_sion.jpg" alt = "Sion" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_sivir.jpg" alt = "Sivir" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_skarner.jpg" alt = "Skarner" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_sona.jpg" alt = "Sona" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_soraka.jpg" alt = "Soraka" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_swain.jpg" alt = "Swain" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_sylas.jpg" alt = "Sylas" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_syndra.jpg" alt = "Syndra" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_tahmkench.jpg" alt = "Tahmkench" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_talon.jpg" alt = "Talon" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_taric.jpg" alt = "Taric" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_teemo.jpg" alt = "Teemo" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_thresh.jpg" alt = "Thresh" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_tristana.jpg" alt = "Tristana" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_trundle.jpg" alt = "Trundle" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_tryndamere.jpg" alt = "Tryndamere" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_twistedfate.jpg" alt = "TwistedFate" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_twitch.jpg" alt = "Twitch" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_udyr.jpg" alt = "Udyr" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_urgot.jpg" alt = "Urgot" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_varus.jpg" alt = "Varus" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_vayne.jpg" alt = "Vayne" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_veigar.jpg" alt = "Veigar" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_velkoz.jpg" alt = "velkoz" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_vex.jpg" alt = "Vex" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_vi.jpg" alt = "Vi" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_viego.jpg" alt = "Viego" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_viktor.jpg" alt = "Viktor" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_vladimir.jpg" alt = "Vladimir" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_warwick.jpg" alt = "Warwick" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_xayah.jpg" alt = "Xayah" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_xerath.jpg" alt = "Xerath" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_xinzhao.jpg" alt = "XinZhao" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_yasuo.jpg" alt = "Yasuo" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_yorick.jpg" alt = "Yorick" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_yuumi.jpg" alt = "Yuumi" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_zac.jpg" alt = "Zac" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_zed.jpg" alt = "Zed" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_zeri.jpg" alt = "Zeri" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_ziggs.jpg" alt = "Ziggs" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_zilean.jpg" alt = "Zilean" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_zoe.jpg" alt = "Zoe" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_zyra.jpg" alt = "Zyra" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_samira.jpg" alt = "Samira" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_seraphine.jpg" alt = "Seraphine" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_sett.jpg" alt = "Sett" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_volibear.jpg" alt = "Volibear" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
+                    <li class = "lists transition"><button class="myButton"><img src = "champions/RiotX_ChampionList_yone.jpg" alt = "Yone" style="object-fit: cover;" width = 200 height = 270 class = "image"></button></li>
                 </ul>
-             
+            </div>
+        </div>
+        <div style="padding-left: 5%;">
+            <!-- Sponsorship tab (bottom of each page) -->
+            <div style="position:relative; top: 175px; left:8%; margin:0; width: 0">
+                <h1>Sponsors</h1>
+            </div>
+            <div class="vl"></div>
+            <img src = "sponsors/LCS_2021.png" style="position: relative; left: 30%; top: -100px;" alt="LCS" width = 170 height = 80 >
+            <img src = "sponsors/Red-Bull-logo.png" style="position: relative;  left: 35%; top: -100px;" alt="RED-BULL" width = 170 height = 80 >
+            <img src = "sponsors/riot_games.png" style="position: relative;  left: 40%; top: -100px;" alt="RIOTGAMES" width = 170 height = 80 >
+            <img src = "sponsors/twitch.png" style="position: relative;  left: 45%; top: -100px;" alt="TWITCH" width = 170 height = 80 >
+        </div>
+        <footer>
+            <p>© 2023 Teiloras Zukauskas. All rights reserved.<br>
+        </footer>
+        <!-- java script implementation -->
+        <script src="jss.js"></script>
+        <script src="champs.js"></script>
     </body>
 </html>
 

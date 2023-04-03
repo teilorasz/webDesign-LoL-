@@ -1,23 +1,210 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <!-- Header Links css file as well as sets the icon of the tab and gives it a title (meta tags are there for easier acces, so it opens up a website for initial device scale and it uses utf8 encoding) -->
         <link rel = "stylesheet" href = "prototype.css">
         <link rel = "icon" href = "LoL_icon.svg.png">
-        <title > League of Legends Sociaty </title>
+        <title > League of Legends Society </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class = "background">
-        <img src = "https://logos-world.net/wp-content/uploads/2020/11/League-of-Legends-Logo.png" width = "600" height = "500" class="center">
+        <!-- Navigation bar -->
         <div>
-            <nav class = "center">
-                <ul>
-                    <li><a href="prototype.html" class = "menu">Home</a></li>
-                    <li><a href="about_us.html" class = "menu">About Us</a></li>
-                    <li><a href="champion_info.html" class = "menu">Champion Info</a></li>
-                    <li><a href="our_team.html" class = "menu">Our Team</a></li>
-                    <li><a href="current_members.html" class = "menu">Current Members</a></li>
-                    <li><a href="events.html" class = "menu">Events</a></li>
-                    <li><a href="contact_us.html" class = "menu">Contact Us</a></li>
-                </ul>
-            </nav>
+          <nav>
+              <ul class = "sepSet">
+                  <li class = "lists"><img src = "LoL_icon.svg.png" height = 50 alt = "Icon"></li>
+                  <li class = "lists"><a href="prototype.html" class = "lia">Home</a></li>
+                  <li class = "lists"><a href="about_us.html" class = "lia">About Us</a></li>
+                  <li class = "lists"><a href="champion_info.html" class = "lia">Champion Info</a></li>
+                  <li class = "lists"><a href="our_team.html" class = "lia">Our Team</a></li>
+                  <li class = "lists"><a href="current_members.html" class = "lia">Current Members</a></li>
+                  <li class = "lists"><a href="events.html" class = "lia">Events</a></li>
+                  <li class = "lists"><a href="contact_us.html" class = "lia">Contact Us</a></li>
+                  <li class = "lists"><a href="image_gallery.html" class = "lia">Gallery</a></li>
+                  <li style="float:right;"><button id="show-login" style="padding:5px 50px 5px 4px;" class = "button">Log In</button></li>
+                  <li style="float:right;"><button id="show-register" style="padding:5px 50px 5px 4px; " class = "button">Register</button></li>
+                  <li style="float:right;"><form id="form" role="search"><input type="search" placeholder = "Search..."><button class = "button"><svg viewBox = "0 0 1024 1024"><path class = "path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button></form></li>
+              </ul>
+          </nav>
+      </div>
+        <!-- check [java(jss.js)] for log in and register popups-->
+        <!-- A log in pop-up linked to a navigation bar button-->
+        <div class = "popup">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Log in</h2>
+                <div class ="form-element">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" placeholder="Enter email">
+                </div>
+                <div class ="form-element">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                </div>
+                <div class ="form-element">
+                    <button>Sign in</button>
+                </div>
             </div>
+        </div>
+        <!-- A register pop-up linked to a navigation bar button -->
+        <div class = "popup2">
+            <div class="close-btn">&times;</div>
+            <div class="form">
+                <h2>Register</h2>
+                <div class ="form-element">
+                    <label for="email2">Email</label>
+                    <input type="text" id="email2" placeholder="Enter email">
+                </div>
+                <div class ="form-element">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" placeholder="Enter first name">
+                </div>
+                <div class ="form-element">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" placeholder="Enter last name">
+                </div>
+                <div class ="form-element">
+                    <label for="password2">Password</label>
+                    <input type="password" id="password2" placeholder="Enter password">
+                </div>
+                <div class ="form-element">
+                    <label for="password3">Re-enter Password</label>
+                    <input type="password" id="password3" placeholder="Re-enter password">
+                </div>
+                <div class ="form-element">
+                    <button>Sign in</button>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top:2% ;">
+            <!-- Header -->
+            <h1 style="text-align: center; font-size: 75px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; top: 25px;">Our Current Members</h1><hr>
+        </div>
+        <div>
+            <!-- Table of the current members of this sociaty. Stylised accordingly to the theme. -->
+            <table style="width:80%; margin-left: 200px ; position: relative; top:75px;">
+                <tr style="background-color:rgba(21,33,33,255);">
+                  <th>Team</th>
+                  <th>Top</th>
+                  <th>Jungle</th>
+                  <th>Mid</th>
+                  <th>AD Carry</th>
+                  <th>Support</th>
+                </tr>
+                <tr>
+                  <td><img src="current_members/teams/FNATIC.png" alt="FNATIC" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/Fnatic/Wunder(MartinHansesn).png" alt="Wunder" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/Fnatic/Razork(IvanMartinDiaz-Jungler).png" alt="Razork" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/Fnatic/Humanoid(MarekBrazda-MidLaner).png" alt="Humanoid" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/Fnatic/Rekkles(CarlMartinErikLarsson-ADC).png" alt="Rekkles" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/Fnatic/Rhuckz(RubenBarbosa-Support).png" alt="Rhuckz" style="object-fit: initial; width: initial; height: 100px;"></td>
+                </tr>
+                <tr style="text-align: center;">
+                  <td>Fnatic</td>
+                  <td>Wunder</td>
+                  <td>Razork</td>
+                  <td>Humanoid</td>
+                  <td>Rekkles</td>
+                  <td>Rhuckz</td>
+                </tr>
+                <tr>
+                  <td><img src="current_members/teams/SSG_Logo.png" alt="SSG" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/ssg/CuVee(TopLanerLeeSeong-jin).png" alt="CuVee" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/ssg/Ambition(JunglerKangChan-yong).png" alt="Ambition" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/ssg/Crown(MidLanerLeeMin-ho).png" alt="Crown" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/ssg/Ruler(BotLanerParkJae-hyuk).png" alt="Ruler" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/ssg/CoreJJ(supportJoYong-in).png" alt="CoreJJ" style="object-fit: initial; width: initial; height: 100px;"></td>
+                </tr>
+                <tr style="text-align: center;">
+                  <td>Samsung Galaxy</td>
+                  <td>CuVee</td>
+                  <td>Ambition</td>
+                  <td>Crown</td>
+                  <td>Ruler</td>
+                  <td>CoreJJ</td>
+                </tr>
+                <tr>
+                  <td><img src="current_members/teams/SKtelecom.png" alt="SKTT1" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/SKtelecom/Zeus(Choi_Woo_Je-toplaner).png" alt="Zeus" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/SKtelecom/Oner(MunHyeon_jun-Jungler).png" alt="Oner" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/SKtelecom/Faker(LeeSang_hyeok-MidLaner).png" alt="Faker" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/SKtelecom/Gumayusi(LeeMin_hyeong-BotLaner).png" alt="Gumayusi" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  <td><img src="current_members/members/SKtelecom/Keria(RyuMin_seok-support).png" alt="Keria" style="object-fit: initial; width: initial; height: 100px;"></td>
+                </tr>
+                <tr style="text-align: center;">
+                  <td>SKtelecom</td>
+                  <td>Zeus</td>
+                  <td>Oner</td>
+                  <td>Faker</td>
+                  <td>Gumayusi</td>
+                  <td>Keria</td>
+                </tr>
+                <tr>
+                    <td><img src="current_members/teams/100_Thieves_logo.png" alt="100Thieves" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/100Thieves/Tenacity(TopLanerMilanOleksij).png" alt="Tenacity" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/100Thieves/Closer(JunglerCanCelik).png" alt="Closer" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/100Thieves/Bjergsen(MidLanerSorenBjerg).png" alt="Bjergsen" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/100Thieves/Doublelift(BotLanerYiliangPeng).png" alt="Doublelift" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/100Thieves/Busio(supportAlanCwalina).png" alt="Busio" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  </tr>
+                  <tr style="text-align: center;">
+                    <td>100 Thieves</td>
+                    <td>Tenacity</td>
+                    <td>Closer</td>
+                    <td>Bjergsen</td>
+                    <td>Doublelift</td>
+                    <td>Busio</td>
+                  </tr>
+                  <tr>
+                    <td><img src="current_members/teams/Dignitaslogo_profile.png" alt="Dignitas" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/dignitas/Armut(TopLanerIrfanBerkTukek).png" alt="Armut" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/dignitas/Santorin(JunglerLucasTaoKilmerLarsen).png" alt="Santorin" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/dignitas/Jensen(MidLanerNicolajJensen).png" alt="Jensen" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/dignitas/Tomo(BotLanerFrankLam).png" alt="Tomo" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/dignitas/Biofrost(supportVincentWang).png" alt="Biofrost" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  </tr>
+                  <tr style="text-align: center;">
+                    <td>Dignitas</td>
+                    <td>Armut</td>
+                    <td>Santorin</td>
+                    <td>Jensen</td>
+                    <td>Tomo</td>
+                    <td>Biofrost</td>
+                  </tr>
+                  <tr>
+                    <td><img src="current_members/teams/Team_Liquidlogo_profile.png" alt="TeamLiquid" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/TeamLiquid/Summit(TopLanerParkWoo-tae).png" alt="Summit" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/TeamLiquid/Pyosik(JunglerHongChang-hyeon).png" alt="Pyosik" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/TeamLiquid/Haeri(MidLanerHarryKang).png" alt="Haeri" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/TeamLiquid/Yeon(BotLanerSeanSung).png" alt="Yeon" style="object-fit: initial; width: initial; height: 100px;"></td>
+                    <td><img src="current_members/members/TeamLiquid/Olleh(supportKimJoo-sung).png" alt="Olleh" style="object-fit: initial; width: initial; height: 100px;"></td>
+                  </tr>
+                  <tr style="text-align: center;">
+                    <td>Team Liquid</td>
+                    <td>Summit</td>
+                    <td>Pyosik</td>
+                    <td>Haeri</td>
+                    <td>Yeon</td>
+                    <td>Olleh</td>
+                  </tr>
+              </table>
+        </div>
+        <div style="padding-top: 2%; padding-left: 5%;">
+          <!-- Sponsorship tab (bottom of each page) -->
+          <div style="position:relative; top: 175px; left:8%; margin:0; width: 0">
+              <h1>Sponsors</h1>
+          </div>
+          <div class="vl"></div>
+          <img src = "sponsors/LCS_2021.png" style="position: relative; left: 30%; top: -100px;" alt="LCS" width = 170 height = 80 >
+          <img src = "sponsors/Red-Bull-logo.png" style="position: relative;  left: 35%; top: -100px;" alt="RED-BULL" width = 170 height = 80 >
+          <img src = "sponsors/riot_games.png" style="position: relative;  left: 40%; top: -100px;" alt="RIOTGAMES" width = 170 height = 80 >
+          <img src = "sponsors/twitch.png" style="position: relative;  left: 45%; top: -100px;" alt="TWITCH" width = 170 height = 80 >
+      </div>
+    <footer>
+        <p>© 2023 Teiloras Zukauskas. All rights reserved.<br>
+    </footer>
+    <!-- java script implementation -->
+    <script src="jss.js"></script>
     </body>
 </html>
