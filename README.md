@@ -21,3 +21,6 @@ ___________________________
 
 There is a video playing on a loop in the Home page. The best frame rate was achieved by using opera GX, I have tested
 this on google chrome and the frame rate of the video was significantly lower.
+
+
+The log-in and register pop ups in image_galler.html have incorrect width values, I have tried to ammend that, but I belive that bootstrap integration messes up the correct width of those values.
