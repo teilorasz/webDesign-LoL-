@@ -153,9 +153,9 @@ body {
 .overlap{
   z-index: 1;
   position: absolute;
-  left: 0px;
-  top: 260px;
-  width: 100%;
+  left: 500px;
+  top: 150px;
+  width: 50vw;
   height: auto;
   margin: 0px;
 }
@@ -256,7 +256,7 @@ svg {
 
 /* Background video (homepage[prototype.html]) */
 #containerV {
-  width: 99vw;
+  width: 99.45vw;
   height: 90vh;
   text-align: center;
   overflow: hidden;
@@ -626,4 +626,58 @@ li {
 /* edits text colour in carousel */
 .carousel-inner h5 , .carousel-inner p {
   color: #c1983c;
+}
+
+/* News styling */
+aside {
+  width: 20%;
+  padding-left: 15px;
+  float: right;
+  margin-right: 40px;
+  padding-right: 15px;
+  font-style: italic;
+  background-color: rgba(21,33,33,255);
+  border-radius: 10px;
+  padding-bottom: 10px;
+  overflow-y: scroll;
+}
+aside div{
+  position: relative;
+  left:170px;
+  top:-120px;
+  width: 200px;
+  height: 0px;
+}
+aside p{
+  display: inline;
+  position: relative;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.latestNews{
+  width: 8vw;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* scroll bar style */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
