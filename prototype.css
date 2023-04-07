@@ -153,9 +153,9 @@ body {
 .overlap{
   z-index: 1;
   position: absolute;
-  left: 500px;
-  top: 150px;
-  width: 50vw;
+  top:20%;
+  left:25%;
+  width: 50%;
   height: auto;
   margin: 0px;
 }
@@ -228,7 +228,7 @@ nav input{
   padding: 2px 4px;
 
 }
-/* Edits text in search bar */
+/* Edits placeholder */
 ::placeholder{
   color: rgba(104,107,87,255);
   opacity:0.7;
@@ -237,8 +237,8 @@ nav input{
 .button {
   all: unset;
   cursor: pointer;
-  width: 44px;
-  height: 44px;
+  width: 2.75em;
+  height: 2.75em;
   text-align: center;
 }
 .myButton{
@@ -249,26 +249,26 @@ nav input{
 svg {
   color: rgba(104,107,87,255)!important;
   fill: currentColor !important;
-  width: 24px !important;
-  height: 24px !important;
+  width: 60% !important;
+  height: auto !important;
   padding: 10px !important;
 }
 
-/* Background video (homepage[prototype.html]) */
+/* Background video (homepage[index.html]) */
 #containerV {
-  width: 99.45vw;
-  height: 90vh;
+  width: 100%;
+  height: auto;
   text-align: center;
   overflow: hidden;
 }
 /* Image container */
 #containerI {
-  width: 99vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   text-align: center;
   overflow: hidden;
 }
-/* blurs the background video homepage(prototype.html) */
+/* blurs the background video homepage(index.html) */
 #videobcg {
   z-index:-2;
   width: inherit;
@@ -303,7 +303,7 @@ a{
   left: 50%;
   opacity: 0;
   transform: translate(-50%,-50%) scale(1.25);
-  width: 380px;
+  width: 20%;
   padding: 20px 30px;
   background: rgba(104,107,87,255);
   box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
@@ -320,10 +320,10 @@ a{
 }
 .popup .close-btn{
   position:absolute;
-  top:10px;
-  right:10px;
-  width:15px;
-  height:15px;
+  top:3%;
+  right:3%;
+  width:3.5%;
+  height:auto;
   background:#888;
   color: #222;
   text-align:center;
@@ -334,12 +334,12 @@ a{
 .popup .form h2{
   text-align:center;
   color:#222;
-  margin: 10px 0px 20px;
+  margin: 3% 0 6%;
   font-size:25px;
 }
 
 .popup .form .form-element{
-  margin:15px 0px;
+  margin:4% 0;
 }
 .popup .form .form-element label{
   font-size:14px;
@@ -378,7 +378,7 @@ a{
   left: 50%;
   opacity: 0;
   transform: translate(-50%,-50%) scale(1.25);
-  width: 380px;
+  width: 20%;
   padding: 20px 30px;
   background: rgba(104,107,87,255);
   box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
@@ -395,10 +395,10 @@ a{
 }
 .popup2 .close-btn{
   position:absolute;
-  top:10px;
-  right:10px;
-  width:15px;
-  height:15px;
+  top:3%;
+  right:3%;
+  width:3.5%;
+  height:auto;
   background:#888;
   color: #222;
   text-align:center;
@@ -409,11 +409,11 @@ a{
 .popup2 .form h2{
   text-align:center;
   color:#222;
-  margin: 10px 0px 20px;
+  margin: 3% 0 6%;
   font-size:25px;
 }
 .popup2 .form .form-element{
-  margin:15px 0px;
+  margin:4% 0;
 }
 .popup2 .form .form-element label{
   font-size:14px;
@@ -462,12 +462,12 @@ blockquote {
 /* class used for sponsorship creates a vertical line */
 .vl {
   border-left: 6px solid #c1983c;
-  width:1px;
   height: 200px;
+  width: 1%;
   position: relative;
   margin-left: -25px;
   left: 25%;
-  top: 50px;
+  top: 5vh;
 }
 /* styles a table */
 table, th, td {
@@ -475,7 +475,7 @@ table, th, td {
   color:#c1983c;
   border: 1px solid rgba(104,107,87,255);
   border-collapse:collapse;
-  width:117px;
+  width:10.7vh;
   font-size: 10pt;
 }
 table, th, td img{
@@ -489,7 +489,7 @@ table, th, td img{
   left: 50%;
   opacity: 1;
   transform: translate(-50%,-50%) scale(1.25);
-  width: 450px;
+  width: 23.5%;
   padding: 20px 30px;
   background: rgba(104,107,87,255);
   box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
@@ -497,7 +497,7 @@ table, th, td img{
   
 }
 .cont .form .form-element{
-  margin:15px 0px;
+  margin:4% 0;
 }
 .cont .form .form-element label{
   font-size:14px;
@@ -570,10 +570,10 @@ li {
 }
 .popup3 .close-btn{
   position:absolute;
-  top:10px;
-  right:10px;
-  width:15px;
-  height:15px;
+  top:3%;
+  right:3%;
+  width:2%;
+  height:auto;
   background:#888;
   color: #eee;
   text-align:center;
@@ -581,20 +581,8 @@ li {
   border-radius:15px;
   cursor:pointer;
 }
-.popup3 .form h2{
-  text-align:center;
-  color:#222;
-  margin: 10px 0px 20px;
-  font-size:25px;
-}
-.popup3 .form h3{
-  text-align:center;
-  color:#222;
-  margin: 10px 0px 20px;
-  font-size:20px;
-}
 .popup3 .form .form-element{
-  margin:15px 0px;
+  margin:4% 0;
 }
 .popup3 .form .form-element label{
   font-size:14px;
@@ -643,10 +631,10 @@ aside {
 }
 aside div{
   position: relative;
-  left:170px;
+  left:45%;
   top:-120px;
-  width: 200px;
-  height: 0px;
+  width: 50%;
+  height: 0;
 }
 aside p{
   display: inline;
@@ -664,7 +652,7 @@ aside p{
 /* scroll bar style */
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 1vh;
 }
 
 /* Track */
