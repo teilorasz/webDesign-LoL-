@@ -13,7 +13,7 @@
         <div>
             <nav>
                 <ul class = "sepSet">
-                    <li class = "lists"><img src = "LoL_icon.svg.png" height = 50 alt = "Icon"></li>
+                    <li class = "lists"><img src = "LoL_icon.svg.png" height = 55 alt = "Icon"></li>
                     <li class = "lists"><a href="index.html" class = "lia">Home</a></li>
                     <li class = "lists"><a href="about_us.html" class = "lia">About Us</a></li>
                     <li class = "lists"><a href="champion_info.html" class = "lia">Champion Info</a></li>
@@ -22,9 +22,8 @@
                     <li class = "lists"><a href="events.html" class = "lia">Events</a></li>
                     <li class = "lists"><a href="contact_us.html" class = "lia">Contact Us</a></li>
                     <li class = "lists"><a href="image_gallery.html" class = "lia">Gallery</a></li>
-                    <li style="float:right;"><button id="show-login" style="padding:5px 50px 5px 4px;" class = "button">Log In</button></li>
-                    <li style="float:right;"><button id="show-register" style="padding:5px 50px 5px 4px; " class = "button">Register</button></li>
-                    <li style="float:right;"><form id="form" role="search"><input type="search" placeholder = "Search..."><button class = "button"><svg viewBox = "0 0 1024 1024"><path class = "path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button></form></li>
+                    <li style="float:right;"><button id="show-login" style="padding: 4vh 1.0vw " class = "buttonB">Log In</button></li>
+                    <li style="float:right;"><button id="show-register" style="padding: 4vh 1.0vw  " class = "buttonB">Register</button></li>
                 </ul>
             </nav>
         </div>
@@ -78,18 +77,18 @@
             </div>
         </div>
         <!--First and main element of the page. contains necessary elements for user to contact the support team and styled accordingly to the theme -->
-        <div style="height: 1000px; padding-top: 2%;">
+        <div style="height: 120vh; padding-top: 2%;">
             <img src="background/summonersrift.jpg" alt="Background" id ="containerI">
-            <img src="background/bara-art-heimerdinger.jpg" alt="Heimerdinger" style=" width: 40vmin; height: 40vmin; border-radius: 50%; position: absolute; top: 450px; left: 250px; box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);">
-            <h1 style="text-align: center; font-size: 75px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; top: 50px; left: 750px; position: absolute;">Contact Us</h1>
-            <h3 style="text-align: center; font-size: 30px; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; top: 175px; left: 775px; position: absolute;">Contact the Help Team</h3>
-            <blockquote style="position: absolute; left: -150px; top: 750px; font-size: 35px; font-family: OCR A Std, monospace;">“One step closer to greater understanding!”</blockquote>
-            <div class="cont" style="left: 1300px; top: -400px;">
+            <img src="background/bara-art-heimerdinger.jpg" alt="Heimerdinger" style=" width: 40vmin; height: 40vmin; border-radius: 50%; position: absolute; top: 60vh; left: 10%; box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);">
+            <h1 style="text-align: center; font-size: 13vh; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; top: 10vh; left: 35%; position: absolute;">Contact Us</h1>
+            <h3 style="text-align: center; font-size: 6vh; font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; top: 27vh; left: 36%; position: absolute;">Contact the Help Team</h3>
+            <blockquote style="position: absolute; left: -150px; top: 90vh; font-size: 3vh; font-family: OCR A Std, monospace;">“One step closer to greater understanding!”</blockquote>
+            <div class="cont" style="left: 75%; top: -30vh;">
                 <!-- form tag contains "action="contact_us.html" for now just to contain that when a form is submitted for now it doesnt open a not developed page. However for later use it should be changed accordingly with correct url"-->
                 <form class="form" method="post" action="contact_us.html" style="display:inline;">
                   <div class="form-element">
                     <label for="help">What Can we help you with?</label>
-                    <select id="help" name="help" style="width:450px; height: 35px; border-radius: 0.25rem;">
+                    <select id="help" name="help" style="width:96%; height: 3vh; border-radius: 0.25rem;">
                       <option value="">Choose...</option>
                       <option value="register">Cant Register</option>
                       <option value="account">Account Issues</option>
@@ -99,38 +98,40 @@
                   </div>
                   <div class="form-element">
                     <label for="name">Your Name:</label>
-                    <input id="name" name="name" type="text" placeholder="Example: Tom Smith" style="width:438px; height: 25px; border-radius: 0.25rem;">
+                    <input id="name" name="name" type="text" placeholder="Example: Tom Smith" style="width:96%; height: 3vh; border-radius: 0.25rem;">
                   </div>
                   <div class="form-element">
                     <label for="email3">Email address:</label>
-                    <input id="email3" name="email" type="text" placeholder="Example: tom.smith@gmail.com" style="width:438px; height: 25px; border-radius: 0.25rem;">
+                    <input id="email3" name="email" type="text" placeholder="Example: tom.smith@gmail.com" style="width:96%; height: 3vh; border-radius: 0.25rem;">
                   </div>
                   <div class="form-element">
                     <label for="details">Details:</label>
-                    <textarea id="details" name="details" cols="58" rows="10" style="border-radius: 0.25rem;"></textarea>
+                    <textarea id="details" name="details" cols="58" rows="5" style="border-radius: 0.25rem;"></textarea>
                   </div>
                   <div class="form-element">
                     <label for="file">Select a file:</label>
                     <input id="file" name="file" type="file" style="display: none;">
-                    <label for="file" style="  width:100vw; height:40vh; border:none; outline:none; font-size:15px; background: #222; color: rgba(104,107,87,255); border-radius:10px; cursor:pointer; text-align: center; padding: 2px 10px;">Choose File</label>
+                    <label for="file" style="  width:100%; height:40vh; border:none; outline:none; font-size:15px; background: #222; color: rgba(104,107,87,255); border-radius:10px; cursor:pointer; text-align: center; padding: 2px 10px;">Choose File</label>
                   </div>
                   <div class="form-element">
                     <button type="submit" id = "form-submit">Submit</button>
                   </div>
                 </form>
-                <img src="gifs/3nRI.gif" alt="sparkles" style="position: absolute; top:70px; left: -625px; width: 40vmin; height: 40vmin; border-radius: 50%;">
+                <img src="gifs/3nRI.gif" alt="sparkles" style="position: absolute; top:10vh; left: -140%; width: 40vmin; height: 40vmin; border-radius: 50%;">
             </div>
         </div>
         <div style="padding-left: 5%;">
             <!-- Sponsorship tab (bottom of each page) -->
-            <div style="position:relative; top: 175px; left:8%; margin:0; width: 0">
+            <div style="position:relative; top: 27.5vh; left:5%; margin:0; width: 0">
                 <h1>Sponsors</h1>
             </div>
             <div class="vl"></div>
-            <img src = "sponsors/LCS_2021.png" style="position: relative; left: 30%; top: -100px;" alt="LCS" width = 170 height = 80 >
-            <img src = "sponsors/Red-Bull-logo.png" style="position: relative;  left: 35%; top: -100px;" alt="RED-BULL" width = 170 height = 80 >
-            <img src = "sponsors/riot_games.png" style="position: relative;  left: 40%; top: -100px;" alt="RIOTGAMES" width = 170 height = 80 >
-            <img src = "sponsors/twitch.png" style="position: relative;  left: 45%; top: -100px;" alt="TWITCH" width = 170 height = 80 >
+            <div style="position:relative; top: -5vh; left: 5%;" class="sponsors">
+                <img src = "sponsors/LCS_2021.png" style="position: relative; left: 30%; top: -10vh;" alt="LCS" width = 170 height = 80 >
+                <img src = "sponsors/Red-Bull-logo.png" style="position: relative;  left: 35%; top: -10vh;" alt="RED-BULL" width = 170 height = 80 >
+                <img src = "sponsors/riot_games.png" style="position: relative;  left: 40%; top: -10vh;" alt="RIOTGAMES" width = 170 height = 80 >
+                <img src = "sponsors/twitch.png" style="position: relative;  left: 45%; top: -10vh;" alt="TWITCH" width = 170 height = 80 >
+            </div>
         </div>
         <footer>
             <p>© 2023 Teiloras Zukauskas. All rights reserved.<br>
