@@ -25,26 +25,26 @@ I have used !important tag to remove possible unvanted design from bootstrap whe
 }
 
 @media screen and (min-width: 576px) {
-  .frames {
-    margin: 10% 0 0 7.5%;
+  #teams.frames {
+    margin: 10% 0 0 5%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .frames {
-    margin: 8% 0 0 5.5%;
+  #teams.frames {
+    margin: 8% 0 0 4%;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .frames {
-    margin: 6% 0 0 3.5%;
+  #teams.frames {
+    margin: 6% 0 0 3%;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .frames {
-    margin: 5% 0 0 2.5%;
+  #teams.frames{
+    margin: 5% 0 0 2%;
   }
 }
 /*Champions page. to create each img a less pointy effect*/
@@ -140,9 +140,6 @@ body {
   video {
     width: 100%;
     height: auto;
-  }
-  .twitter{
-    width: 84%;
   }
   .sponsors{
     width: 72%;
@@ -465,10 +462,10 @@ blockquote {
 /* class used for sponsorship creates a vertical line */
 .vl {
   border-left: 6px solid #c1983c;
-  height: 200px;
+  height: 15vw;
   width: 1%;
   position: relative;
-  margin-left: -25px;
+  margin-left:-5%;
   left: 25%;
   top: 5vh;
 }
@@ -650,4 +647,45 @@ aside p{
 
 *, ::after, ::before{
   box-sizing:unset !important;
+}
+
+footer p{
+  font-size: 1.2vw;
+}
+
+/* index page, late edit, adds the padding style and img to the 10 list items in index page next to the twitter handle. */
+.lol-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lol-list li {
+  background-color: #222;
+  color: rgba(104,107,87,255);
+  padding: 2.8%;
+  margin-bottom: 1.7%;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  width:90%;
+}
+
+.lol-list li::before {
+  content: "";
+  width: 5vmin;
+  height: 5vmin;
+  border-radius: 10px;
+  background-image: url('https://static.wikia.nocookie.net/leagueoflegends/images/0/02/Season_2022_-_Challenger.png');
+  background-size: contain;
+  margin-right: 1%;
+}
+
+.lol-list li:first-child {
+  margin-top: 10%;
+}
+
+.lol-list li:last-child {
+  margin-bottom: 0;
 }
