@@ -50,11 +50,11 @@
             <h2>Log in</h2>
             <div class ="form-element">
                 <label for="email">Email</label>
-                <input type="text" id="email" placeholder="Enter email">
+                <input type="text" id="email" name="email" placeholder="Enter email">
             </div>
             <div class ="form-element">
                 <label for="password">Password</label>
-                <input type="password" id="password" placeholder="Enter password">
+                <input type="password" id="password" name="password" placeholder="Enter password">
             </div>
             <div class ="form-element">
                 <button onclick="submit_logIn()">Sign in</button>
@@ -68,23 +68,23 @@
             <h2>Register</h2>
             <div class ="form-element">
                 <label for="email2">Email</label>
-                <input type="text" id="email2" placeholder="Enter email">
+                <input type="text" id="email2" name="email2" placeholder="Enter email">
             </div>
             <div class ="form-element">
                 <label for="first_name">First Name</label>
-                <input type="text" id="first_name" placeholder="Enter first name">
+                <input type="text" id="first_name" name="firstName" placeholder="Enter first name">
             </div>
             <div class ="form-element">
                 <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" placeholder="Enter last name">
+                <input type="text" id="last_name" name="lastName" placeholder="Enter last name">
             </div>
             <div class ="form-element">
                 <label for="password2">Password</label>
-                <input type="password" id="password2" placeholder="Enter password">
+                <input type="password" id="password2" name="password2" placeholder="Enter password">
             </div>
             <div class ="form-element">
                 <label for="password3">Re-enter Password</label>
-                <input type="password" id="password3" placeholder="Re-enter password">
+                <input type="password" id="password3" name="password3" placeholder="Re-enter password">
             </div>
             <div class ="form-element">
                 <button onclick="submit_register()">Sign in</button>
@@ -110,7 +110,7 @@
     <!-- Second element of the page. Displays a twitter element which shows tweets. this can be edited further-->
     <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%;">
         <div class = "lists" style=" position: relative; right: -3%; width: 50%; margin: 5% auto 0;">
-            <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">What is <a href="https://twitter.com/VelvetQueenH?ref_src=twsrc%5Etfw">@VelvetQueenH</a>’s profession!? Making killer drawings apparently. <a href="https://t.co/bRPkqJ3Vb6">pic.twitter.com/bRPkqJ3Vb6</a></p>&mdash; Riot Games (@riotgames) <a href="https://twitter.com/riotgames/status/1641470348603301888?ref_src=twsrc%5Etfw">March 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <blockquote class="twitter-tweet" data-theme="dark"><p lang="en" dir="ltr">What is <a href="https://twitter.com/VelvetQueenH?ref_src=twsrc%5Etfw">@VelvetQueenH</a>’s profession!? Making killer drawings apparently. <a href="https://t.co/bRPkqJ3Vb6">pic.twitter.com/bRPkqJ3Vb6</a></p>&mdash; Riot Games (@riotgames) <a href="https://twitter.com/riotgames/status/1641470348603301888?ref_src=twsrc%5Etfw">March 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js"></script>
         </div>
         <div style="position:inherit">
             <ul class="lol-list">
@@ -150,10 +150,10 @@
         </div>
         <div class="vl"></div>
         <div style="position:relative; top: -5vh; left: 5%; width: 70%;" class="sponsors">
-            <img src = "sponsors/LCS_2021.png" style="position: relative; left: 25%; top: -15vh;" alt="LCS" width = 20% height = auto >
-            <img src = "sponsors/Red-Bull-logo.png" style="position: relative;  left: 35%; top: -15vh;" alt="RED-BULL" width = 20% height = auto >
-            <img src = "sponsors/riot_games.png" style="position: relative;  left: 40%; top: -15vh;" alt="RIOTGAMES" width = 20% height = auto >
-            <img src = "sponsors/twitch.png" style="position: relative;  left: 45%; top: -15vh;" alt="TWITCH" width = 20% height = auto >
+            <img src = "sponsors/LCS_2021.png" style="position: relative; left: 30%; top: -15vh;  width: 20%; height: auto;" alt="LCS">
+            <img src = "sponsors/Red-Bull-logo.png" style="position: relative;  left: 35%; top: -15vh; width: 20%; height: auto;" alt="RED-BULL">
+            <img src = "sponsors/riot_games.png" style="position: relative;  left: 40%; top: -15vh; width: 20%; height: auto;" alt="RIOTGAMES">
+            <img src = "sponsors/twitch.png" style="position: relative;  left: 45%; top: -15vh; width: 20%; height: auto;" alt="TWITCH">
         </div>
     </div>
     <footer>
